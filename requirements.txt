@@ -1,0 +1,5 @@
+
+boto3
+python-dotenv
+confluent-kafka
+psycopg2-binary
