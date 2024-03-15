@@ -7,6 +7,9 @@ A pipeline that connects to a Kafka Data Stream to read data, clean it and then 
 setup_argparse()
 sets the argparser up with two arguments, a true or false for logging
 
+setup_consumer()
+connects to a kafka topic as a consumer
+
 load_data()
 connects to the kafka and loads in the message in a while loop. 
 The message is converted to json and then error checked with error_check().
@@ -52,6 +55,9 @@ check_valid_time()
 checks if the at key-value is correct and returns a related error message if not
 
 # database.py
+
+get_db_connection()
+Uses psycopg2 to connect to a database
 
 voting_upload()
 used by pipeline.py to insert data to a given table and columns.
